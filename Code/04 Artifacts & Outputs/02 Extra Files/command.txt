@@ -1,0 +1,1 @@
+find dist/assets/*.js -type f -execdir echo '{}' ';'
