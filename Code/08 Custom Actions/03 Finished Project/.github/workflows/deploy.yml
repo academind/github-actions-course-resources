@@ -65,14 +65,12 @@ jobs:
           path: ./dist
       - name: Output contents
         run: ls
-      - name: Get AWS permissions
-        uses: aws-actions/configure-aws-credentials@v1
-        with:
-          role-to-assume: arn:aws:iam::450226343468:role/GitHubDemo1
-          aws-region: us-east-1
       - name: Deploy site
         id: deploy
         uses: ./.github/actions/deploy-s3-docker
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         with:
           bucket: gha-security-hosting-demo
           dist-folder: ./dist
