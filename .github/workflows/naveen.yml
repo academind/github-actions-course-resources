@@ -1,0 +1,11 @@
+name : naveen_workflow
+on: workflow_dispatch
+jobs:
+  naveen-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print naveen
+        run: echo "hello world!"
+      - name: print kumar
+        run: echo "good bye!"
+        
