@@ -1,0 +1,67 @@
+git clone https://github.com/YOUR-USERNAME/my-devops-project.git
+cd my-devops-project
+
+Add the other repository as a submodule
+git submodule add https://github.com/OTHER-USERNAME/github-actions-demo.git github-actions-demo
+
+git status
+git add .gitmodules github-actions-demo
+git commit -m "Add GitHub Actions demo as submodule"
+git push
+
+git submodule update --remote github-actions-demo
+git add github-actions-demo
+git commit -m "Update GitHub Actions demo submodule"
+git push
+
+git --version
+
+Connect the repository to your laptop
+git clone https://github.com/your-username/your-repository.git
+
+git remote -v
+
+: Add your GitHub repository URL.
+git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
+
+git branch -M main
+git push -u origin main
+
+git remote set-url origin https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
+
+git submodule add https://github.com/academind/github-actions-course-resources.git github-actions-course-resources
+
+git remote set-url origin https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git	
+git remote set-url origin https://github.com/akashverma/my-devops-project.git
+
+git rev-parse --show-toplevel
+
+git config --global --list
+
+git clone downloads a repository to your laptop for the first time.
+git pull updates a repository that you have already downloaded
+
+git clone https://github.com/academind/github-actions-course-resources.git
+
+git pull
+
+First time:
+git clone <repository-url>
+
+Every time you need updates:
+git pull
+
+To forcefully delete a Git project directory using PowerShell, use this command:
+
+Remove-Item -Path "C:\path\to\your\git-directory" -Recurse -Force
+
+Rename-Item -Path "oldname.txt" -NewName "newname.txt"
+
+New-Item GitHub Action Learning Documents ItemType Directory
+
+git config --global user.name "your-username"
+git config --global user.email "your-email"
+
+git checkout <commit-id> to checkout the any version of the commit
+
+git checkout <branch name>
